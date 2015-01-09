@@ -1,0 +1,19 @@
+{
+  "name": "metrics-redis",
+  "version": "1.0.0",
+  "repository": "git://github.com/segmentio/metrics-redis.git",
+  "description": "Redis plugin for segmentio/metrics",
+  "keywords": [
+    "metrics",
+    "redis"
+  ],
+  "dependencies": {
+    "debug": "^2.1.1",
+    "wildcards": "^1.0.2"
+  },
+  "devDependencies": {
+    "metrics": "git://github.com/segmentio/metrics",
+    "mocha": "^2.1.0",
+    "redis": "^0.12.1"
+  }
+}
