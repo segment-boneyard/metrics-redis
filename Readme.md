@@ -1,4 +1,4 @@
-# metrics-express
+# metrics-redis
 
 A [segmentio/metrics](https://github.com/segmentio/metrics) plugin to save and load metrics from a [Redis](http://redis.io/) db.
 
