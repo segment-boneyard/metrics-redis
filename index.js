@@ -13,7 +13,7 @@ module.exports = function (redis) {
   return function (metrics) {
     var redisSetKey = 'metrics:keys';
 
-    // load all the keys from the redis
+    // load all the keys from redis into metrics
     function loadAll() {
       debug('loading all metrics:keys ..');
       redis.smembers(redisSetKey, function (err, keys) {
@@ -23,7 +23,7 @@ module.exports = function (redis) {
       });
     }
 
-    // save all the keys in metrics
+    // save all the keys in metrics to redis
     function saveAll() {
       metrics.keys().forEach(function (key) {
         save(key, metrics.get(key).values());
